@@ -3,34 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Forfisic gym</title>
+    <title>Forfisic Gym</title>
+    <style>
+        /* Estilos para el cuerpo del documento */
+        body {
+            background-image: url('imagenes/wallhaven-kx2d7d.jpg'); /* Imagen de fondo */
+            background-size: 100% 40vh; /* Ajusta la imagen para cubrir el 40% del viewport en altura */
+            background-position: center top; /* Centra la imagen en la parte superior */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            height: 30vh; /* Establece la altura del body al 30% del viewport */
+            margin: 0; /* Elimina el margen predeterminado del body */
+            display: flex; /* Usa flexbox para centrar el contenido */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+        }
+
+        /* Estilos para la esfera */
+        .sphere {
+            width: 300px; /* Ancho de la esfera */
+            height: 300px; /* Altura de la esfera */
+            border-radius: 50%; /* Hace que el div sea redondo */
+            background-color: white; /* Color de fondo blanco */
+            display: flex; /* Usa flexbox para centrar el contenido dentro de la esfera */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            position: absolute; /* Posiciona la esfera de forma absoluta */
+            top: 30vh; /* Posiciona la esfera 30% desde la parte superior del viewport */
+            border: none; /* Asegura que no haya borde */
+            box-shadow: none; /* Elimina cualquier sombra */
+        }
+
+        /* Estilos para la imagen dentro de la esfera */
+        .sphere img {
+            width: 80%; /* Ancho de la imagen dentro de la esfera */
+            height: 80%; /* Altura de la imagen dentro de la esfera */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            border: none; /* Asegura que la imagen no tenga borde */
+        }
+
+        /* Estilos para el contenido principal */
+        .content {
+            margin-top: 20vh; /* Margen superior para dar espacio a la esfera */
+        }
+    </style>
 </head>
-<body style="
-background-image: url('imagenes/wallhaven-kx2d7d.jpg'); /* Cambia 'ruta/a/tu-imagen.jpg' por la ruta de tu imagen de fondo */
-background-size: 100% 40vh; /* Ajusta la imagen para cubrir toda el área */
-background-position: center top; /* Centra la imagen */
- background-repeat: no-repeat; /* Evita que la imagen se repita */
-height: 30vh; /* Establece la altura al 100% del viewport */
-margin: 0; /* Elimina el margen predeterminado del cuerpo */
-display: flex; /* Usa flexbox para centrar verticalmente el contenido */
-justify-content: center; /* Centra horizontalmente */
-align-items: center; /* Centra verticalmente */
-">
-<!-- Contenedor principal para centrar contenido -->
-<div class="container">
+<body>
+    <!-- Contenedor principal para centrar contenido -->
+    <div class="container content">
+        <!-- Aquí puedes agregar otros contenidos de la página -->
+    </div>
 
-</div>
+    <!-- Esfera con la imagen -->
+    <div class="sphere">
+        <img src="imagenes/wallhaven-2krpem.jpg" alt="Imagen de la compañía"> <!-- Imagen dentro de la esfera -->
+    </div>
 
-
-
-
-
-
-
+    <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
