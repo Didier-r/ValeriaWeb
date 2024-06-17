@@ -18,6 +18,7 @@
             display: flex; /* Usa flexbox para centrar el contenido */
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
+            position: relative; /* Cambia la posición a relativa para que los elementos se superpongan correctamente */
         }
 
         /* Estilos para la esfera */
@@ -25,27 +26,30 @@
             width: 300px; /* Ancho de la esfera */
             height: 300px; /* Altura de la esfera */
             border-radius: 50%; /* Hace que el div sea redondo */
-            background-color: white; /* Color de fondo blanco */
+            background-color: transparent; /* Color de fondo transparente */
             display: flex; /* Usa flexbox para centrar el contenido dentro de la esfera */
             justify-content: center; /* Centra horizontalmente */
             align-items: center; /* Centra verticalmente */
             position: absolute; /* Posiciona la esfera de forma absoluta */
-            top: 30vh; /* Posiciona la esfera 30% desde la parte superior del viewport */
+            top: 25vh; /* Posiciona la esfera un poco más abajo, ajusta según sea necesario */
+            left: 50%; /* Posiciona la esfera en el centro horizontalmente */
+            transform: translateX(-50%); /* Corrige la posición horizontal para centrar la esfera */
             border: none; /* Asegura que no haya borde */
             box-shadow: none; /* Elimina cualquier sombra */
         }
 
         /* Estilos para la imagen dentro de la esfera */
         .sphere img {
-            width: 80%; /* Ancho de la imagen dentro de la esfera */
-            height: 80%; /* Altura de la imagen dentro de la esfera */
+            width: 100%; /* Ancho completo de la imagen dentro de la esfera */
+            height: 100%; /* Altura completa de la imagen dentro de la esfera */
             border-radius: 50%; /* Hace que la imagen sea redonda */
-            border: none; /* Asegura que la imagen no tenga borde */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
         }
 
         /* Estilos para el contenido principal */
         .content {
-            margin-top: 20vh; /* Margen superior para dar espacio a la esfera */
+            position: relative; /* Cambia la posición a relativa para mantener el contenido por encima */
+            z-index: 1; /* Asegura que el contenido principal esté sobre la esfera */
         }
     </style>
 </head>
