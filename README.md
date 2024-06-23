@@ -2,5 +2,5 @@
 ## Proposito de la pagina web
 El propocito de esta pagina web por ahora es tener todo preparado ,bueno lo que seria la estructura el codigo necesitamos como el esqueleto pero sin que funcione 
 ## Etapas actuales de proyecto 
-## Actualizacion 0.4
-La actualizacion se basa en que se consiguio agregar el fondo con un color azul para ser mas especifico el color es de 0046BF tambien se agregaron los textos algo simples pero pensamos que pueden ser funcionales por ahora 
+## Actualizacion 0.5
+La actualizacion se basa en que se termino de agreagar los textos lo cual se condiguio de forma satisfactoria,ahora se esta trabajando en agregar el boton en blanco por ahora el boton funciona de forma muy regular 

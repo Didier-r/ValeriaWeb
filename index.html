@@ -34,6 +34,7 @@
             align-items: center; /* Centra verticalmente */
             border: none; /* Asegura que no haya borde */
             box-shadow: none; /* Elimina cualquier sombra */
+            margin-bottom: 20px; /* Margen inferior para separar del siguiente elemento */
         }
 
         /* Estilos para la imagen dentro de la esfera */
@@ -48,7 +49,7 @@
         .text-below {
             margin-top: 20px; /* Añade un margen superior para separar del círculo */
             color: white; /* Color del texto blanco */
-            font-size: 2em; /* Tamaño de fuente grande */
+            font-size: 4em; /* Tamaño de fuente más grande */
             text-align: center; /* Centra el texto */
             font-style: italic; /* Texto en cursiva */
         }
@@ -61,12 +62,38 @@
             margin-top: 10px; /* Añade un margen superior para separar del texto anterior */
         }
 
+        /* Estilos para el texto adicional */
+        .extra-text {
+            color: white; /* Color del texto blanco */
+            font-size: 1em; /* Tamaño de fuente normal */
+            text-align: center; /* Centra el texto */
+            margin-top: 10px; /* Añade un margen superior para separar del texto anterior */
+        }
+
+        /* Estilos para el botón */
+        .button-container {
+            text-align: center; /* Centra el contenido */
+            margin-top: 10px; /* Ajusta el margen superior */
+            position: absolute; /* Posiciona de manera absoluta */
+            bottom: 5px; /* Lo coloca 5px desde la parte inferior del contenedor padre */
+            left: 50%; /* Lo coloca en el centro horizontal */
+            transform: translateX(-50%); /* Lo ajusta para centrarlo exactamente */
+        }
+
+        .button {
+            background-color: white; /* Color de fondo blanco */
+            color: #0046BF; /* Color del texto azul */
+            font-size: 1em; /* Tamaño de fuente normal */
+            padding: 10px 20px; /* Añade padding para darle forma de botón */
+            border: none; /* Elimina bordes predeterminados */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor a pointer al pasar por encima */
+            text-decoration: none; /* Elimina subrayado */
+        }
+
         /* Estilos para el contenido principal */
         .content {
-            position: absolute; /* Posiciona el contenido de forma absoluta */
-            top: 50%; /* Posiciona el contenido en el centro vertical */
-            left: 50%; /* Posiciona el contenido en el centro horizontal */
-            transform: translate(-50%, -50%); /* Ajusta para centrar exactamente el contenido */
+            position: relative; /* Posiciona de manera relativa para que los elementos absolutos se ajusten a este contenedor */
             text-align: center; /* Centra el texto */
         }
     </style>
@@ -85,6 +112,17 @@
         <!-- Nuevo texto debajo del texto existente -->
         <div class="additional-text">
             EL MEJOR GYM
+        </div>
+        <!-- Texto adicional -->
+        <div class="extra-text">
+            ¡Trabajamos por tu salud!
+        </div>
+        
+        <!-- Botón -->
+        <div class="button-container">
+            <a href="#" class="button">
+                QUIENES SOMOS
+            </a>
         </div>
     </div>
 
