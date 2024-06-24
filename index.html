@@ -107,11 +107,41 @@
             text-align: center; /* Centra el texto */
         }
 
-        /* Estilos para la imagen en la parte inferior */
+        /* Estilos para las imágenes en la parte inferior */
         .footer-image {
             position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: 90px; /* Ajusta la distancia desde la parte inferior */
-            right: 1040px; /* Ajusta la distancia desde la parte derecha */
+            bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+            right: 70px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
+
+        .footer-image-email {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+            right: 10px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
+
+        .footer-image-whatsapp {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+            right: 140px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
+
+        .footer-image-location {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+            right: 210px; /* Ajusta la distancia desde la parte derecha */
             width: 50px; /* Ancho de la imagen */
             height: 50px; /* Altura de la imagen */
             border-radius: 50%; /* Hace que la imagen sea redonda */
@@ -163,6 +193,12 @@
     
     <!-- Imagen en la parte inferior -->
     <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
+    <!-- Segunda imagen en la parte inferior -->
+    <img src="imagenes/Email.png" alt="Email Logo" class="footer-image-email">
+    <!-- Tercera imagen en la parte inferior -->
+    <img src="imagenes/WhatsApp.png" alt="WhatsApp Logo" class="footer-image-whatsapp">
+    <!-- Cuarta imagen en la parte inferior -->
+    <img src="imagenes/Ubicacion.png" alt="Ubicacion Logo" class="footer-image-location">
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
