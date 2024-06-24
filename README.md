@@ -2,5 +2,5 @@
 ## Proposito de la pagina web
 El propocito de esta pagina web por ahora es tener todo preparado ,bueno lo que seria la estructura el codigo necesitamos como el esqueleto pero sin que funcione 
 ## Etapas actuales de proyecto 
-## Actualizacion 0.5
-La actualizacion se basa en que se termino de agreagar los textos lo cual se condiguio de forma satisfactoria,ahora se esta trabajando en agregar el boton en blanco por ahora el boton funciona de forma muy regular 
+## Actualizacion 0.6
+La actualizacion se basa en que se logro agregar los tres botones aun son algo pequeños pero son funcionales por ahora sirven tal vez falte agregar cosas como que sean mas apecados al diseño original pero sirven

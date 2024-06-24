@@ -70,17 +70,27 @@
             margin-top: 10px; /* Añade un margen superior para separar del texto anterior */
         }
 
-        /* Estilos para el botón */
+        /* Estilos para los contenedores de los botones */
         .button-container {
             text-align: center; /* Centra el contenido */
-            margin-top: 10px; /* Ajusta el margen superior */
-            position: absolute; /* Posiciona de manera absoluta */
-            bottom: 5px; /* Lo coloca 5px desde la parte inferior del contenedor padre */
-            left: 50%; /* Lo coloca en el centro horizontal */
-            transform: translateX(-50%); /* Lo ajusta para centrarlo exactamente */
+            margin-top: 30px; /* Ajusta el margen superior */
+            position: relative; /* Posiciona de manera relativa */
         }
 
-        .button {
+        .button-container2 {
+            text-align: center; /* Centra el contenido */
+            margin-top: 20px; /* Ajusta el margen superior */
+            position: relative; /* Posiciona de manera relativa */
+        }
+
+        .button-container3 {
+            text-align: center; /* Centra el contenido */
+            margin-top: 20px; /* Ajusta el margen superior */
+            position: relative; /* Posiciona de manera relativa */
+        }
+
+        /* Estilos para los botones */
+        .button, .button2, .button3 {
             background-color: white; /* Color de fondo blanco */
             color: #0046BF; /* Color del texto azul */
             font-size: 1em; /* Tamaño de fuente normal */
@@ -118,10 +128,24 @@
             ¡Trabajamos por tu salud!
         </div>
         
-        <!-- Botón -->
+        <!-- Primer botón -->
         <div class="button-container">
             <a href="#" class="button">
                 QUIENES SOMOS
+            </a>
+        </div>
+
+        <!-- Segundo botón -->
+        <div class="button-container2">
+            <a href="#" class="button2">
+                PLANES DE ENTRENAMIENTO
+            </a>
+        </div>
+
+        <!-- Tercer botón -->
+        <div class="button-container3">
+            <a href="#" class="button3">
+                CLASES GRUPALES
             </a>
         </div>
     </div>
