@@ -114,6 +114,46 @@
             font-weight: bold; /* Texto en negrita */
             color: white;
         }
+        /* Estilos para las imágenes en la parte inferior */
+        .footer-image {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+            right: 1000px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
+
+        .footer-image-email {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+            right: 930px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
+
+        .footer-image-whatsapp {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom:  20px; /* Ajusta la distancia desde la parte inferior */
+            right: 865px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
+
+        .footer-image-location {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+            right: 810px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
     </style>
 </head>
 <body>
@@ -137,6 +177,23 @@
     </div>
 
     <h2 class="footer-title">Quiénes Somos</h2>
+
+
+    <a href="https://www.instagram.com" target="_blank">
+        <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
+    </a>
+    <!-- Segunda imagen en la parte inferior -->
+    <a href="mailto:example@example.com">
+        <img src="imagenes/correo-electronico.png" alt="Email Logo" class="footer-image-email">
+    </a>
+    <!-- Tercera imagen en la parte inferior -->
+    <a href="https://wa.me/1234567890" target="_blank">
+        <img src="imagenes/whatsapp.png" alt="WhatsApp Logo" class="footer-image-whatsapp">
+    </a>
+    <!-- Cuarta imagen en la parte inferior -->
+    <a href="https://www.google.com/maps" target="_blank">
+        <img src="imagenes/Ubicacion.png" alt="Ubicacion Logo" class="footer-image-location">
+    </a>
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
