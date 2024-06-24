@@ -94,7 +94,7 @@
             background-color: white; /* Color de fondo blanco */
             color: #0046BF; /* Color del texto azul */
             font-size: 1em; /* Tamaño de fuente normal */
-            padding: 10px 20px; /* Añade padding para darle forma de botón */
+            padding: 10px 60px; /* Añade padding para darle forma de botón */
             border: none; /* Elimina bordes predeterminados */
             border-radius: 5px; /* Bordes redondeados */
             cursor: pointer; /* Cambia el cursor a pointer al pasar por encima */
@@ -105,6 +105,17 @@
         .content {
             position: relative; /* Posiciona de manera relativa para que los elementos absolutos se ajusten a este contenedor */
             text-align: center; /* Centra el texto */
+        }
+
+        /* Estilos para la imagen en la parte inferior */
+        .footer-image {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: 90px; /* Ajusta la distancia desde la parte inferior */
+            right: 1040px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
         }
     </style>
 </head>
@@ -149,6 +160,9 @@
             </a>
         </div>
     </div>
+    
+    <!-- Imagen en la parte inferior -->
+    <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
