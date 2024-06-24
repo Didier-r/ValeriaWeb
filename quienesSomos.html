@@ -57,6 +57,63 @@
             font-size: 2em; /* Tamaño un poco más grande que el texto anterior */
             color: white;
         }
+        .company-info {
+            position: absolute;
+            top: 55%; /* Ajusta la posición vertical según sea necesario */
+            left: 25%; /* Centra horizontalmente */
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white; /* Fondo blanco */
+            width: 80%; /* Ancho del área blanca */
+            max-width: 800px; /* Máximo ancho */
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+            border-radius: 10px; /* Borde redondeado */
+        }
+
+        .company-info h2 {
+            font-size: 2em;
+            color: #0145C0; /* Color azul */
+        }
+
+        .company-info p {
+            font-size: 1.2em;
+            color: #0145C0; /* Color azul */
+        }
+
+        .company-info-new {
+            position: absolute;
+            top: 77%; /* Ajusta la posición vertical según sea necesario */
+            left: 70%; /* Centra horizontalmente */
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white; /* Fondo blanco */
+            width: 80%; /* Ancho del área blanca */
+            max-width: 800px; /* Máximo ancho */
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+            border-radius: 10px; /* Borde redondeado */
+        }
+
+        .company-info-new h2 {
+            font-size: 2em;
+            color: #0145C0; /* Color azul */
+        }
+
+        .company-info-new p {
+            font-size: 1.2em;
+            color: #0145C0; /* Color azul */
+        }
+
+        .footer-title {
+            position: absolute;
+            bottom: 620px; /* Ajusta la posición vertical desde abajo */
+            width: 100%;
+            text-align: center;
+            font-size: 2em; /* Tamaño del texto para el título del footer */
+            font-weight: bold; /* Texto en negrita */
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -65,7 +122,21 @@
     </div>
     <h1 class="title">Forfisic Gym</h1>
     <h2 class="subtitle">EL MEJOR GIMNASIO</h2>
-    <h3 class="additional-text">!Trabajamos por tu salud!</h3>
+    <h3 class="additional-text">¡Trabajamos por tu salud!</h3>
+    
+    <!-- Primera sección de información de la empresa -->
+    <div class="company-info">
+        <h2>Misión</h2>
+        <p>Promover hábitos de vida saludable a nuestros usuarios, creando en ellos conciencia sobre la práctica de la actividad física, la adecuada alimentación y los beneficios de esta en niños y adultos; donde podrán alcanzar una vida más saludable, mejorar su figura y autoestima a través de planes de entrenamientos seguros y confiables acompañados de personal de apoyo en un ambiente agradable y motivador.</p>
+    </div>
+
+    <!-- Segunda sección de información de la empresa -->
+    <div class="company-info-new">
+        <h2>Visión</h2>
+        <p>Ser reconocidos como el mejor gimnasio, líder en el desarrollo de programas y servicios, con la mejor tecnología, equipos y profesionales especializados que superen las expectativas y necesidades de nuestros clientes en cuanto a la actividad física, con un excelente ambiente laboral y de servicio.</p>
+    </div>
+
+    <h2 class="footer-title">Quiénes Somos</h2>
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
