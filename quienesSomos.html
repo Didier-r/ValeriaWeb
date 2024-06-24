@@ -11,6 +11,8 @@
             margin: 0;
             height: 100vh;
             background: linear-gradient(to bottom, #2F3135 30%, #0145C0 30%);
+            color: white; /* Color del texto blanco para que se vea en el fondo oscuro */
+            font-family: Arial, sans-serif;
         }
         .circle-img {
             position: absolute;
@@ -28,12 +30,42 @@
             height: 100%;
             object-fit: cover;
         }
+        .title {
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            text-align: center;
+            font-size: 7em; /* Tamaño grande del texto */
+            font-family: "Monotype Corsiva", cursive; /* Texto en cursiva */
+            color: white;
+        }
+        .subtitle {
+            position: absolute;
+            top: 12%; /* Ajusta la posición vertical */
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 1em; /* Tamaño más pequeño del texto */
+            color: white;
+        }
+        .additional-text {
+            position: absolute;
+            top: 18%; /* Ajusta la posición vertical */
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 2em; /* Tamaño un poco más grande que el texto anterior */
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="circle-img">
         <img src="imagenes/wallhaven-2krpem.jpg" alt="Imagen del usuario">
     </div>
+    <h1 class="title">Forfisic Gym</h1>
+    <h2 class="subtitle">EL MEJOR GIMNASIO</h2>
+    <h3 class="additional-text">!Trabajamos por tu salud!</h3>
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
