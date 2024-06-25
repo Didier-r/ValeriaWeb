@@ -9,7 +9,7 @@
     <style>
         body {
             margin: 0;
-            height: 100vh;
+            height: 50vh;
             background: linear-gradient(to bottom, #2F3135 30%, #0145C0 30%);
             color: white; /* Color del texto blanco para que se vea en el fondo oscuro */
             font-family: Arial, sans-serif;
@@ -59,7 +59,7 @@
         }
         .footer-title {
             position: absolute;
-            bottom: 620px; /* Ajusta la posición vertical desde abajo */
+            bottom: 500px; /* Ajusta la posición vertical desde abajo */
             width: 100%;
             text-align: center;
             font-size: 2em; /* Tamaño del texto para el título del footer */
@@ -70,12 +70,75 @@
             background-color: #2F3135; /* Color de fondo del contenedor */
             padding: 20px; /* Espacio alrededor del video */
             text-align: center; /* Centrar el video horizontalmente */
-            margin: 500px auto; /* Espacio superior e inferior automático y centrado */
-            width: 60%; /* Ancho del contenedor */
+            margin: 800px auto; /* Espacio superior e inferior automático y centrado */
+            width: 50%; /* Ancho del contenedor */
         }
         video {
             width: 80%; /* Ancho del video para ajustarse al contenedor */
             height: auto; /* Altura automática para mantener la relación de aspecto */
+        }
+        .company-info {
+            position: absolute;
+            top: 65%; /* Ajusta la posición vertical según sea necesario */
+            left: 50%; /* Centra horizontalmente */
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white; /* Fondo blanco */
+            width: 80%; /* Ancho del área blanca */
+            max-width: 800px; /* Máximo ancho */
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+            border-radius: 10px; /* Borde redondeado */
+        }
+
+        .company-info h2 {
+            font-size: 2em;
+            color: #0145C0; /* Color azul */
+        }
+
+        .company-info p {
+            font-size: 1.2em;
+            color: #0145C0; /* Color azul */
+        }
+         /* Estilos para las imágenes en la parte inferior */
+         .footer-image {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: -310px; /* Ajusta la distancia desde la parte inferior */
+            right: 1000px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
+
+        .footer-image-email {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: -310px; /* Ajusta la distancia desde la parte inferior */
+            right: 930px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
+
+        .footer-image-whatsapp {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom:  -310px; /* Ajusta la distancia desde la parte inferior */
+            right: 865px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        }
+
+        .footer-image-location {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: -310px; /* Ajusta la distancia desde la parte inferior */
+            right: 810px; /* Ajusta la distancia desde la parte derecha */
+            width: 50px; /* Ancho de la imagen */
+            height: 50px; /* Altura de la imagen */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
         }
     </style>
 </head>
@@ -96,6 +159,30 @@
             Tu navegador no soporta la reproducción de videos.
         </video>
     </div>
+    <!-- Primera sección de información de la empresa -->
+    <div class="company-info">
+        <h2>Nuestros planes incluyen</h2>
+        <p>Valoración Funcional
+            Plan De Entrenamiento
+            Clases Grupales
+            Acompañamiento Del Coach</p>
+    </div>
+ 
+    <a href="https://www.instagram.com" target="_blank">
+        <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
+    </a>
+    <!-- Segunda imagen en la parte inferior -->
+    <a href="mailto:example@example.com">
+        <img src="imagenes/correo-electronico.png" alt="Email Logo" class="footer-image-email">
+    </a>
+    <!-- Tercera imagen en la parte inferior -->
+    <a href="https://wa.me/1234567890" target="_blank">
+        <img src="imagenes/whatsapp.png" alt="WhatsApp Logo" class="footer-image-whatsapp">
+    </a>
+    <!-- Cuarta imagen en la parte inferior -->
+    <a href="https://www.google.com/maps" target="_blank">
+        <img src="imagenes/Ubicacion.png" alt="Ubicacion Logo" class="footer-image-location">
+    </a>
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
