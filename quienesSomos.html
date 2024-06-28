@@ -10,13 +10,25 @@
         body {
             margin: 0;
             height: 100%;
-            background: linear-gradient(to bottom, #2F3135 30%, #0145C0 30%);
+            background-color: #0145C0;
             color: white;
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             padding-bottom: 80px; /* Espacio para las imágenes de la parte inferior */
+        }
+
+        .header-banner {
+            background-color: #2F3135;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0; /* Ajusta el espacio dentro del banner */
+        }
+
+        .main-content {
+            width: 100%;
+            padding: 20px 0; /* Ajusta el espacio dentro de la sección principal */
+            flex-grow: 1;
         }
 
         .circle-img {
@@ -91,6 +103,11 @@
             .company-info, .company-info-new {
                 max-width: 90%; /* Ajusta el ancho máximo para pantallas más pequeñas */
             }
+
+            .over-cards-title {
+                font-size: 5vw; /* Reducir tamaño de fuente para pantallas pequeñas */
+                margin-top: 20px; /* Ajuste de margen superior */
+            }
         }
 
         /* Estilos para los títulos de las secciones de información */
@@ -122,7 +139,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: #0145C0;
             padding: 10px 0;
         }
 
@@ -133,49 +150,39 @@
             object-fit: cover;
             margin: 0 10px;
         }
-
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            .title {
-                font-size: 8vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
-            }
-            .subtitle, .additional-text, .footer-title, .company-info, .company-info-new {
-                font-size: 4vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
-            }
-            .company-info, .company-info-new {
-                max-width: 90%; /* Ancho máximo ajustado para pantallas más pequeñas */
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- Imagen del círculo superior -->
-    <div class="circle-img">
-        <img src="imagenes/wallhaven-2krpem.jpg" alt="Imagen del usuario">
+    <!-- Banner superior -->
+    <div class="header-banner">
+        <!-- Imagen del círculo superior -->
+        <div class="circle-img">
+            <img src="imagenes/wallhaven-2krpem.jpg" alt="Imagen del usuario">
+        </div>
+        <!-- Título principal -->
+        <h1 class="title">Forfisic Gym</h1>
+        <!-- Subtítulo -->
+        <h2 class="subtitle">EL MEJOR GIMNASIO</h2>
+        <!-- Texto adicional -->
+        <h3 class="additional-text">¡Trabajamos por tu salud!</h3>
     </div>
 
-    <!-- Título principal -->
-    <h1 class="title">Forfisic Gym</h1>
+    <!-- Contenedor principal -->
+    <div class="main-content">
+        <!-- Título sobre las tarjetas -->
+        <h2 class="over-cards-title">Quiénes Somos</h2>
 
-    <!-- Subtítulo -->
-    <h2 class="subtitle">EL MEJOR GIMNASIO</h2>
+        <!-- Primera sección de información de la empresa -->
+        <div class="company-info">
+            <h2>Misión</h2>
+            <p>Promover hábitos de vida saludable a nuestros usuarios, creando en ellos conciencia sobre la práctica de la actividad física, la adecuada alimentación y los beneficios de esta en niños y adultos; donde podrán alcanzar una vida más saludable, mejorar su figura y autoestima a través de planes de entrenamientos seguros y confiables acompañados de personal de apoyo en un ambiente agradable y motivador.</p>
+        </div>
 
-    <!-- Texto adicional -->
-    <h3 class="additional-text">¡Trabajamos por tu salud!</h3>
-    
-    <!-- Título sobre las tarjetas -->
-    <h2 class="over-cards-title">Quiénes Somos</h2>
-
-    <!-- Primera sección de información de la empresa -->
-    <div class="company-info">
-        <h2>Misión</h2>
-        <p>Promover hábitos de vida saludable a nuestros usuarios, creando en ellos conciencia sobre la práctica de la actividad física, la adecuada alimentación y los beneficios de esta en niños y adultos; donde podrán alcanzar una vida más saludable, mejorar su figura y autoestima a través de planes de entrenamientos seguros y confiables acompañados de personal de apoyo en un ambiente agradable y motivador.</p>
-    </div>
-
-    <!-- Segunda sección de información de la empresa -->
-    <div class="company-info-new">
-        <h2>Visión</h2>
-        <p>Ser reconocidos como el mejor gimnasio, líder en el desarrollo de programas y servicios, con la mejor tecnología, equipos y profesionales especializados que superen las expectativas y necesidades de nuestros clientes en cuanto a la actividad física, con un excelente ambiente laboral y de servicio.</p>
+        <!-- Segunda sección de información de la empresa -->
+        <div class="company-info-new">
+            <h2>Visión</h2>
+            <p>Ser reconocidos como el mejor gimnasio, líder en el desarrollo de programas y servicios, con la mejor tecnología, equipos y profesionales especializados que superen las expectativas y necesidades de nuestros clientes en cuanto a la actividad física, con un excelente ambiente laboral y de servicio.</p>
+        </div>
     </div>
 
     <!-- Contenedor para las imágenes de redes sociales en el footer -->
