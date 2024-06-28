@@ -9,10 +9,28 @@
     <style>
         body {
             margin: 0;
-            background: linear-gradient(to bottom, #2F3135 30%, #0145C0 30%);
+            background-color: #0145C0;
             color: white;
             font-family: Arial, sans-serif;
             padding-bottom: 100px; /* Espacio para imágenes en la parte inferior */
+        }
+        .header {
+            background-color: #2F3135;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            padding: 20px;
+            text-align: center;
+        }
+        .header .title {
+            margin: 0;
+            font-size: 7vw; /* Tamaño de fuente responsivo */
+            font-family: "Monotype Corsiva", cursive;
+        }
+        .header .subtitle, .header .additional-text {
+            font-size: 2vw; /* Tamaño de fuente responsivo */
         }
         .circle-img {
             position: absolute;
@@ -30,18 +48,11 @@
             height: 100%;
             object-fit: cover;
         }
-        .title {
+        .content {
+            margin-top: 200px;
             text-align: center;
-            font-size: 7vw; /* Tamaño de fuente responsivo */
-            font-family: "Monotype Corsiva", cursive;
-            margin-top: 140px;
-        }
-        .subtitle, .additional-text {
-            text-align: center;
-            font-size: 2vw; /* Tamaño de fuente responsivo */
         }
         .footer-title {
-            text-align: center;
             font-size: 2vw; /* Tamaño de fuente responsivo */
             font-weight: bold;
             margin-bottom: 20px; /* Espacio bajo el título del footer */
@@ -67,7 +78,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: #0145C0;
             text-align: center;
             padding: 10px 0;
             display: flex;
@@ -82,10 +93,10 @@
         }
 
         @media (max-width: 768px) {
-            .title {
+            .header .title {
                 font-size: 10vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
             }
-            .subtitle, .additional-text, .footer-title {
+            .header .subtitle, .header .additional-text, .footer-title {
                 font-size: 4vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
             }
             .company-info, .company-info-new, .company-info-new2 {
@@ -95,30 +106,34 @@
     </style>
 </head>
 <body>
-    <div class="circle-img">
-        <img src="imagenes/wallhaven-2krpem.jpg" alt="Imagen del usuario">
-    </div>
-    <h1 class="title">Forfisic Gym</h1>
-    <h2 class="subtitle">EL MEJOR GIMNASIO</h2>
-    <h3 class="additional-text">¡Trabajamos por tu salud!</h3>
-
-    <h2 class="footer-title">Planes de entrenamiento</h2>
-
-    <div class="company-info">
-        <h2>Plan individual</h2>
-        <p>57.000</p>
-        <p>Mensual</p>
+    <div class="header">
+        <div class="circle-img">
+            <img src="imagenes/wallhaven-2krpem.jpg" alt="Imagen del usuario">
+        </div>
+        <h1 class="title">Forfisic Gym</h1>
+        <h2 class="subtitle">EL MEJOR GIMNASIO</h2>
+        <h3 class="additional-text">¡Trabajamos por tu salud!</h3>
     </div>
 
-    <div class="company-info-new">
-        <h2>Plan amigos</h2>
-        <p>50.000</p>
-        <p>A partir de 3 usuarios nuevos</p>
-    </div>
+    <div class="content">
+        <h2 class="footer-title">Planes de entrenamiento</h2>
 
-    <div class="company-info-new2">
-        <h2>Nuestros planes incluyen</h2>
-        <p>Valoración Funcional<br>Plan De Entrenamiento<br>Clases Grupales<br>Acompañamiento Del Coach.</p>
+        <div class="company-info">
+            <h2>Plan individual</h2>
+            <p>57.000</p>
+            <p>Mensual</p>
+        </div>
+
+        <div class="company-info-new">
+            <h2>Plan amigos</h2>
+            <p>50.000</p>
+            <p>A partir de 3 usuarios nuevos</p>
+        </div>
+
+        <div class="company-info-new2">
+            <h2>Nuestros planes incluyen</h2>
+            <p>Valoración Funcional<br>Plan De Entrenamiento<br>Clases Grupales<br>Acompañamiento Del Coach.</p>
+        </div>
     </div>
 
     <!-- Contenedor para las imágenes en la parte inferior -->
