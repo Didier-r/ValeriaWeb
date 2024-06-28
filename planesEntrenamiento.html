@@ -25,7 +25,7 @@
             text-align: center;
         }
         .header .title {
-            margin: 0;
+            margin: 10px 0 5px 0; /* Ajuste de márgenes para el título */
             font-size: 7vw; /* Tamaño de fuente responsivo */
             font-family: "Monotype Corsiva", cursive;
         }
@@ -49,8 +49,10 @@
             object-fit: cover;
         }
         .content {
-            margin-top: 200px;
+            margin-top: 250px; /* Ajusta el margen superior para dar espacio al encabezado fijo */
             text-align: center;
+            position: relative; /* Añade posición relativa para poder ajustar z-index */
+            z-index: 100; /* Asegura que el contenido esté por encima del banner */
         }
         .footer-title {
             font-size: 2vw; /* Tamaño de fuente responsivo */
@@ -92,15 +94,64 @@
             margin: 0 10px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             .header .title {
-                font-size: 10vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
+                font-size: 5vw; /* Ajuste de tamaño de fuente para pantallas grandes */
             }
             .header .subtitle, .header .additional-text, .footer-title {
-                font-size: 4vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
+                font-size: 2vw; /* Ajuste de tamaño de fuente para pantallas grandes */
+            }
+            .content {
+                margin-top: 300px; /* Ajusta el margen superior para pantallas grandes */
+            }
+        }
+
+        @media (max-width: 992px) {
+            .header .title {
+                font-size: 6vw; /* Ajuste de tamaño de fuente para tabletas en orientación vertical */
+            }
+            .header .subtitle, .header .additional-text, .footer-title {
+                font-size: 2.5vw; /* Ajuste de tamaño de fuente para tabletas en orientación vertical */
+            }
+            .content {
+                margin-top: 240px; /* Ajusta el margen superior para tabletas en orientación vertical */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header .title {
+                font-size: 10vw; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+            }
+            .header .subtitle, .header .additional-text, .footer-title {
+                font-size: 4vw; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+            }
+            .content {
+                margin-top: 180px; /* Ajusta el margen superior para pantallas pequeñas */
             }
             .company-info, .company-info-new, .company-info-new2 {
-                max-width: 90%; /* Ancho máximo ajustado para pantallas más pequeñas */
+                max-width: 90%; /* Ancho máximo ajustado para pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header .title {
+                font-size: 12vw; /* Ajuste de tamaño de fuente para pantallas muy pequeñas */
+            }
+            .header .subtitle, .header .additional-text, .footer-title {
+                font-size: 5vw; /* Ajuste de tamaño de fuente para pantallas muy pequeñas */
+            }
+            .content {
+                margin-top: 130px; /* Ajusta el margen superior para pantallas muy pequeñas */
+            }
+            .company-info, .company-info-new, .company-info-new2 {
+                padding: 15px; /* Ajusta el padding para pantallas muy pequeñas */
+                max-width: 95%; /* Ancho máximo ajustado para pantallas muy pequeñas */
+            }
+            .company-info h2, .company-info-new h2, .company-info-new2 h2 {
+                font-size: 5vw; /* Tamaño de fuente ajustado para pantallas muy pequeñas */
+            }
+            .company-info p, .company-info-new p, .company-info-new2 p {
+                font-size: 3vw; /* Tamaño de fuente ajustado para pantallas muy pequeñas */
             }
         }
     </style>
