@@ -8,23 +8,22 @@
     <title>Clases Grupales</title>
     <style>
         body {
-            
             margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    background: linear-gradient(to bottom, #2F3135 30%, #0145C0 30%);
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(to bottom, #2F3135 30%, #0145C0 30%);
+            padding-bottom: 100px; /* Espacio para las imágenes del footer */
         }
         .circle-img {
             position: absolute;
-            
             top: 20px;
             left: 20px;
-            width: 100px; /* Ajusta el tamaño de la esfera */
-            height: 100px; /* Ajusta el tamaño de la esfera */
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             overflow: hidden;
-            border: 2px solid #fff; /* Opcional: agrega un borde blanco alrededor de la esfera */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Opcional: agrega sombra para darle efecto */
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
         .circle-img img {
             width: 100%;
@@ -32,114 +31,60 @@
             object-fit: cover;
         }
         .title {
-            position: absolute;
-            top: 0%;
-            width: 100%;
             text-align: center;
-            font-size: 7em; /* Tamaño grande del texto */
-            font-family: "Monotype Corsiva", cursive; /* Texto en cursiva */
-            color: white;
+            font-size: 7vw; /* Tamaño de fuente responsivo */
+            font-family: "Monotype Corsiva", cursive;
+            margin-top: 140px;
         }
-        .subtitle {
-            position: absolute;
-            top: 12%; /* Ajusta la posición vertical */
-            left: 0;
-            width: 100%;
+        .subtitle, .additional-text {
             text-align: center;
-            font-size: 1em; /* Tamaño más pequeño del texto */
-            color: white;
-        }
-        .additional-text {
-            position: absolute;
-            top: 18%; /* Ajusta la posición vertical */
-            left: 0;
-            width: 100%;
-            text-align: center;
-            font-size: 2em; /* Tamaño un poco más grande que el texto anterior */
-            color: white;
+            font-size: 2vw; /* Tamaño de fuente responsivo */
         }
         .footer-title {
-            position: absolute;
-            bottom: 500px; /* Ajusta la posición vertical desde abajo */
-            width: 100%;
             text-align: center;
-            font-size: 2em; /* Tamaño del texto para el título del footer */
-            font-weight: bold; /* Texto en negrita */
-            color: white;
+            font-size: 2vw; /* Tamaño de fuente responsivo */
+            font-weight: bold;
+            margin-bottom: 20px; /* Espacio bajo el título del footer */
         }
         .video-container {
             background-color: #2F3135; /* Color de fondo del contenedor */
             padding: 20px; /* Espacio alrededor del video */
             text-align: center; /* Centrar el video horizontalmente */
-            margin: 500px auto; /* Espacio superior e inferior automático y centrado */
-            width: 50%; /* Ancho del contenedor */
+            margin: 20px auto; /* Espacio superior e inferior automático y centrado */
+            max-width: 100%; /* Ancho máximo del contenedor */
         }
         video {
-            width: 80%; /* Ancho del video para ajustarse al contenedor */
+            max-width: 100%; /* Video responsive */
             height: auto; /* Altura automática para mantener la relación de aspecto */
         }
-        .company-info {
-            position: absolute;
-            top: 110%; /* Ajusta la posición vertical según sea necesario */
-            left: 50%; /* Centra horizontalmente */
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #2F3135; /* Fondo blanco */
-            width: 20%; /* Ancho del área blanca */
-            max-width: 800px; /* Máximo ancho */
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
-            border-radius: 10px; /* Borde redondeado */
+        /* Estilos para las imágenes en la parte inferior */
+        .footer-images-container {
+            position: fixed; /* Posición fija para las imágenes */
+            bottom: 20px; /* Distancia desde la parte inferior */
+            left: 50%; /* Centrado horizontal */
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-around;
+            width: 80%; /* Ancho del contenedor */
+            max-width: 600px; /* Ancho máximo del contenedor */
+        }
+        .footer-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
-        .company-info h2 {
-            font-size: 2em;
-            color: #0145C0; /* Color azul */
-        }
-
-        .company-info p {
-            font-size: 1.2em;
-            color: #0145C0; /* Color azul */
-        }
-         /* Estilos para las imágenes en la parte inferior */
-         .footer-image {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: -420px; /* Ajusta la distancia desde la parte inferior */
-            right: 1000px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-        }
-
-        .footer-image-email {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: -420px; /* Ajusta la distancia desde la parte inferior */
-            right: 930px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-        }
-
-        .footer-image-whatsapp {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom:  -420px; /* Ajusta la distancia desde la parte inferior */
-            right: 865px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-        }
-
-        .footer-image-location {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: -420px; /* Ajusta la distancia desde la parte inferior */
-            right: 810px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 10vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
+            }
+            .subtitle, .additional-text, .footer-title {
+                font-size: 4vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
+            }
+            .footer-images-container {
+                width: 90%; /* Ancho del contenedor ajustado para pantallas más pequeñas */
+            }
         }
     </style>
 </head>
@@ -160,30 +105,22 @@
             Tu navegador no soporta la reproducción de videos.
         </video>
     </div>
-    <!-- Primera sección de información de la empresa -->
-    <div class="company-info">
-        <h2>Nuestros planes incluyen</h2>
-        <p>Valoración Funcional
-            Plan De Entrenamiento
-            Clases Grupales
-            Acompañamiento Del Coach</p>
+
+    <!-- Contenedor para las imágenes en la parte inferior -->
+    <div class="footer-images-container">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
+        </a>
+        <a href="mailto:example@example.com">
+            <img src="imagenes/correo-electronico.png" alt="Email Logo" class="footer-image">
+        </a>
+        <a href="https://wa.me/1234567890" target="_blank">
+            <img src="imagenes/whatsapp.png" alt="WhatsApp Logo" class="footer-image">
+        </a>
+        <a href="https://www.google.com/maps" target="_blank">
+            <img src="imagenes/Ubicacion.png" alt="Ubicacion Logo" class="footer-image">
+        </a>
     </div>
- 
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
-    </a>
-    <!-- Segunda imagen en la parte inferior -->
-    <a href="mailto:example@example.com">
-        <img src="imagenes/correo-electronico.png" alt="Email Logo" class="footer-image-email">
-    </a>
-    <!-- Tercera imagen en la parte inferior -->
-    <a href="https://wa.me/1234567890" target="_blank">
-        <img src="imagenes/whatsapp.png" alt="WhatsApp Logo" class="footer-image-whatsapp">
-    </a>
-    <!-- Cuarta imagen en la parte inferior -->
-    <a href="https://www.google.com/maps" target="_blank">
-        <img src="imagenes/Ubicacion.png" alt="Ubicacion Logo" class="footer-image-location">
-    </a>
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

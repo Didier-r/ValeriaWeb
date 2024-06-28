@@ -5,154 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Quienes Somos</title>
+    <title>Quiénes Somos</title>
     <style>
         body {
             margin: 0;
-            height: 100vh;
+            height: 100%;
             background: linear-gradient(to bottom, #2F3135 30%, #0145C0 30%);
-            color: white; /* Color del texto blanco para que se vea en el fondo oscuro */
+            color: white;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 80px; /* Espacio para las imágenes de la parte inferior */
         }
+
         .circle-img {
             position: absolute;
             top: 20px;
             left: 20px;
-            width: 100px; /* Ajusta el tamaño de la esfera */
-            height: 100px; /* Ajusta el tamaño de la esfera */
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             overflow: hidden;
-            border: 2px solid #fff; /* Opcional: agrega un borde blanco alrededor de la esfera */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Opcional: agrega sombra para darle efecto */
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
+
         .circle-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         .title {
-            position: absolute;
-            top: 0%;
-            width: 100%;
             text-align: center;
-            font-size: 7em; /* Tamaño grande del texto */
-            font-family: "Monotype Corsiva", cursive; /* Texto en cursiva */
+            font-size: 5vw; /* Tamaño de fuente responsivo */
+            font-family: "Monotype Corsiva", cursive;
             color: white;
+            margin-top: 140px; /* Espacio sobre el título */
         }
+
         .subtitle {
-            position: absolute;
-            top: 12%; /* Ajusta la posición vertical */
-            left: 0;
-            width: 100%;
             text-align: center;
-            font-size: 1em; /* Tamaño más pequeño del texto */
+            font-size: 2vw; /* Tamaño de fuente responsivo */
             color: white;
+            margin-top: 20px; /* Espacio sobre el subtítulo */
         }
+
         .additional-text {
-            position: absolute;
-            top: 18%; /* Ajusta la posición vertical */
-            left: 0;
-            width: 100%;
             text-align: center;
-            font-size: 2em; /* Tamaño un poco más grande que el texto anterior */
+            font-size: 3vw; /* Tamaño de fuente responsivo */
             color: white;
+            margin-top: 20px; /* Espacio sobre el texto adicional */
         }
-        .company-info {
-            position: absolute;
-            top: 55%; /* Ajusta la posición vertical según sea necesario */
-            left: 25%; /* Centra horizontalmente */
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: white; /* Fondo blanco */
-            width: 80%; /* Ancho del área blanca */
-            max-width: 800px; /* Máximo ancho */
+
+        .company-info, .company-info-new {
+            background-color: white;
+            color: #0145C0;
             text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
-            border-radius: 10px; /* Borde redondeado */
-        }
-
-        .company-info h2 {
-            font-size: 2em;
-            color: #0145C0; /* Color azul */
-        }
-
-        .company-info p {
-            font-size: 1.2em;
-            color: #0145C0; /* Color azul */
-        }
-
-        .company-info-new {
-            position: absolute;
-            top: 77%; /* Ajusta la posición vertical según sea necesario */
-            left: 70%; /* Centra horizontalmente */
-            transform: translate(-50%, -50%);
+            margin: 20px auto;
             padding: 20px;
-            background-color: white; /* Fondo blanco */
-            width: 80%; /* Ancho del área blanca */
-            max-width: 800px; /* Máximo ancho */
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
-            border-radius: 10px; /* Borde redondeado */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-width: 80%; /* Ancho máximo para el contenido */
         }
 
-        .company-info-new h2 {
-            font-size: 2em;
-            color: #0145C0; /* Color azul */
+        .company-info h2, .company-info-new h2 {
+            font-size: 3vw; /* Tamaño de fuente responsivo */
+            color: #0145C0;
         }
 
-        .company-info-new p {
-            font-size: 1.2em;
-            color: #0145C0; /* Color azul */
+        .company-info p, .company-info-new p {
+            font-size: 1.5vw; /* Tamaño de fuente responsivo */
+            color: #0145C0;
         }
 
         .footer-title {
-            position: absolute;
-            bottom: 620px; /* Ajusta la posición vertical desde abajo */
-            width: 100%;
             text-align: center;
-            font-size: 2em; /* Tamaño del texto para el título del footer */
-            font-weight: bold; /* Texto en negrita */
+            font-size: 3vw; /* Tamaño de fuente responsivo */
+            font-weight: bold;
             color: white;
+            margin-bottom: 20px; /* Espacio bajo el título del footer */
         }
+
         /* Estilos para las imágenes en la parte inferior */
+        .footer-images-container {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+        }
+
         .footer-image {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-            right: 1000px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 10px;
         }
 
-        .footer-image-email {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-            right: 930px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-        }
-
-        .footer-image-whatsapp {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom:  20px; /* Ajusta la distancia desde la parte inferior */
-            right: 865px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-        }
-
-        .footer-image-location {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-            right: 810px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 8vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
+            }
+            .subtitle, .additional-text, .footer-title, .company-info, .company-info-new {
+                font-size: 4vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
+            }
+            .company-info, .company-info-new {
+                max-width: 90%; /* Ancho máximo ajustado para pantallas más pequeñas */
+            }
         }
     </style>
 </head>
@@ -178,22 +142,21 @@
 
     <h2 class="footer-title">Quiénes Somos</h2>
 
-
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
-    </a>
-    <!-- Segunda imagen en la parte inferior -->
-    <a href="mailto:example@example.com">
-        <img src="imagenes/correo-electronico.png" alt="Email Logo" class="footer-image-email">
-    </a>
-    <!-- Tercera imagen en la parte inferior -->
-    <a href="https://wa.me/1234567890" target="_blank">
-        <img src="imagenes/whatsapp.png" alt="WhatsApp Logo" class="footer-image-whatsapp">
-    </a>
-    <!-- Cuarta imagen en la parte inferior -->
-    <a href="https://www.google.com/maps" target="_blank">
-        <img src="imagenes/Ubicacion.png" alt="Ubicacion Logo" class="footer-image-location">
-    </a>
+    <!-- Contenedor para las imágenes de la parte inferior -->
+    <div class="footer-images-container">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
+        </a>
+        <a href="mailto:example@example.com">
+            <img src="imagenes/correo-electronico.png" alt="Email Logo" class="footer-image">
+        </a>
+        <a href="https://wa.me/1234567890" target="_blank">
+            <img src="imagenes/whatsapp.png" alt="WhatsApp Logo" class="footer-image">
+        </a>
+        <a href="https://www.google.com/maps" target="_blank">
+            <img src="imagenes/Ubicacion.png" alt="Ubicacion Logo" class="footer-image">
+        </a>
+    </div>
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
