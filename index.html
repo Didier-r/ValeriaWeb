@@ -108,44 +108,59 @@
         }
 
         /* Estilos para las imágenes en la parte inferior */
-        .footer-image {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: 60px; /* Ajusta la distancia desde la parte inferior */
-            right: 1000px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+        .footer-images-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Espacio entre las imágenes */
+            margin-top: 20px; /* Ajusta el margen superior */
+            flex-wrap: wrap; /* Permite que las imágenes se envuelvan en líneas nuevas en pantallas pequeñas */
         }
 
-        .footer-image-email {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: 60px; /* Ajusta la distancia desde la parte inferior */
-            right: 930px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-        }
-
-        .footer-image-whatsapp {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom:  60px; /* Ajusta la distancia desde la parte inferior */
-            right: 865px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-        }
-
+        .footer-image,
+        .footer-image-email,
+        .footer-image-whatsapp,
         .footer-image-location {
-            position: absolute; /* Posiciona la imagen de manera absoluta */
-            bottom: 60px; /* Ajusta la distancia desde la parte inferior */
-            right: 810px; /* Ajusta la distancia desde la parte derecha */
-            width: 50px; /* Ancho de la imagen */
-            height: 50px; /* Altura de la imagen */
-            border-radius: 50%; /* Hace que la imagen sea redonda */
-            object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .sphere {
+                width: 200px;
+                height: 200px;
+            }
+
+            .text-below {
+                font-size: 2em;
+            }
+
+            .additional-text {
+                font-size: 1.2em;
+            }
+
+            .extra-text {
+                font-size: 0.8em;
+            }
+
+            .button, .button2, .button3 {
+                font-size: 0.8em;
+                padding: 10px 30px;
+            }
+
+            .footer-image,
+            .footer-image-email,
+            .footer-image-whatsapp,
+            .footer-image-location {
+                width: 40px;
+                height: 40px;
+                right: initial;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -190,26 +205,24 @@
             </a>
         </div>
     </div>
-    
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
-    </a>
-    <!-- Segunda imagen en la parte inferior -->
-    <a href="mailto:example@example.com">
-        <img src="imagenes/correo-electronico.png" alt="Email Logo" class="footer-image-email">
-    </a>
-    <!-- Tercera imagen en la parte inferior -->
-    <a href="https://wa.me/1234567890" target="_blank">
-        <img src="imagenes/whatsapp.png" alt="WhatsApp Logo" class="footer-image-whatsapp">
-    </a>
-    <!-- Cuarta imagen en la parte inferior -->
-    <a href="https://www.google.com/maps" target="_blank">
-        <img src="imagenes/Ubicacion.png" alt="Ubicacion Logo" class="footer-image-location">
-    </a>
 
-    <!-- Scripts de JavaScript para Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Contenedor flex para las imágenes de la parte inferior -->
+    <div class="footer-images-container">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
+        </a>
+        <!-- Segunda imagen en la parte inferior -->
+        <a href="mailto:example@example.com">
+            <img src="imagenes/correo-electronico.png" alt="Email Logo" class="footer-image-email">
+        </a>
+        <!-- Tercera imagen en la parte inferior -->
+        <a href="https://wa.me/1234567890" target="_blank">
+            <img src="imagenes/whatsapp.png" alt="WhatsApp Logo" class="footer-image-whatsapp">
+        </a>
+        <!-- Cuarta imagen en la parte inferior -->
+        <a href="https://www.google.com/maps" target="_blank">
+            <img src="imagenes/Ubicacion.png" alt="Ubicacion Logo" class="footer-image-location">
+        </a>
+    </div>
 </body>
 </html>
