@@ -57,27 +57,45 @@
         /* Estilos para el texto adicional */
         .additional-text {
             text-align: center;
-            font-size: 4vw; /* Tamaño de fuente responsivo */
+            font-size: 3vw; /* Tamaño de fuente responsivo */
             color: white;
             margin-top: 10px; /* Espacio sobre el texto adicional */
         }
 
-        /* Estilos para las secciones de información de la empresa */
-        .company-info, .company-info-new {
+        .company-info {
             background-color: white;
             color: #0145C0;
             text-align: center;
-            margin: 20px auto;
+            margin: 150px auto 20px; /* Ajusta el margen superior e inferior */
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
             max-width: 80%; /* Ancho máximo para el contenido */
         }
+        
+        .company-info-new {
+            background-color: white;
+            color: #0145C0;
+            text-align: center;
+            margin: 20px auto; /* Ajusta el margen superior e inferior */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-width: 80%; /* Ancho máximo para el contenido */
+        }
+        
+        @media (max-width: 768px) {
+            .company-info, .company-info-new {
+                max-width: 90%; /* Ajusta el ancho máximo para pantallas más pequeñas */
+            }
+        }
+        
 
         /* Estilos para los títulos de las secciones de información */
         .company-info h2, .company-info-new h2 {
             font-size: 3vw; /* Tamaño de fuente responsivo */
             color: #0145C0;
+            margin-bottom: 10px; /* Espacio bajo el título */
         }
 
         /* Estilos para los párrafos de las secciones de información */
