@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,28 +37,32 @@
             object-fit: cover;
         }
 
+        /* Estilos para el título principal */
         .title {
             text-align: center;
-            font-size: 5vw; /* Tamaño de fuente responsivo */
+            font-size: 10vw; /* Tamaño de fuente responsivo */
             font-family: "Monotype Corsiva", cursive;
             color: white;
-            margin-top: 140px; /* Espacio sobre el título */
+            margin-top: 0px; /* Espacio sobre el título */
         }
 
+        /* Estilos para el subtítulo */
         .subtitle {
             text-align: center;
             font-size: 2vw; /* Tamaño de fuente responsivo */
             color: white;
-            margin-top: 20px; /* Espacio sobre el subtítulo */
+            margin-top: 0px; /* Espacio sobre el subtítulo */
         }
 
+        /* Estilos para el texto adicional */
         .additional-text {
             text-align: center;
-            font-size: 3vw; /* Tamaño de fuente responsivo */
+            font-size: 4vw; /* Tamaño de fuente responsivo */
             color: white;
-            margin-top: 20px; /* Espacio sobre el texto adicional */
+            margin-top: 10px; /* Espacio sobre el texto adicional */
         }
 
+        /* Estilos para las secciones de información de la empresa */
         .company-info, .company-info-new {
             background-color: white;
             color: #0145C0;
@@ -70,16 +74,19 @@
             max-width: 80%; /* Ancho máximo para el contenido */
         }
 
+        /* Estilos para los títulos de las secciones de información */
         .company-info h2, .company-info-new h2 {
             font-size: 3vw; /* Tamaño de fuente responsivo */
             color: #0145C0;
         }
 
+        /* Estilos para los párrafos de las secciones de información */
         .company-info p, .company-info-new p {
             font-size: 1.5vw; /* Tamaño de fuente responsivo */
             color: #0145C0;
         }
 
+        /* Estilos para el título del footer */
         .footer-title {
             text-align: center;
             font-size: 3vw; /* Tamaño de fuente responsivo */
@@ -88,7 +95,7 @@
             margin-bottom: 20px; /* Espacio bajo el título del footer */
         }
 
-        /* Estilos para las imágenes en la parte inferior */
+        /* Estilos para las imágenes en el footer */
         .footer-images-container {
             display: flex;
             justify-content: center;
@@ -107,6 +114,7 @@
             margin: 0 10px;
         }
 
+        /* Estilos responsivos */
         @media (max-width: 768px) {
             .title {
                 font-size: 8vw; /* Ajuste de tamaño de fuente para pantallas más pequeñas */
@@ -121,11 +129,18 @@
     </style>
 </head>
 <body>
+    <!-- Imagen del círculo superior -->
     <div class="circle-img">
         <img src="imagenes/wallhaven-2krpem.jpg" alt="Imagen del usuario">
     </div>
+
+    <!-- Título principal -->
     <h1 class="title">Forfisic Gym</h1>
+
+    <!-- Subtítulo -->
     <h2 class="subtitle">EL MEJOR GIMNASIO</h2>
+
+    <!-- Texto adicional -->
     <h3 class="additional-text">¡Trabajamos por tu salud!</h3>
     
     <!-- Primera sección de información de la empresa -->
@@ -140,9 +155,10 @@
         <p>Ser reconocidos como el mejor gimnasio, líder en el desarrollo de programas y servicios, con la mejor tecnología, equipos y profesionales especializados que superen las expectativas y necesidades de nuestros clientes en cuanto a la actividad física, con un excelente ambiente laboral y de servicio.</p>
     </div>
 
+    <!-- Título del footer -->
     <h2 class="footer-title">Quiénes Somos</h2>
 
-    <!-- Contenedor para las imágenes de la parte inferior -->
+    <!-- Contenedor para las imágenes de redes sociales en el footer -->
     <div class="footer-images-container">
         <a href="https://www.instagram.com" target="_blank">
             <img src="imagenes/Instagram.png" alt="Instagram Logo" class="footer-image">
