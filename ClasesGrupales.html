@@ -52,13 +52,14 @@
         }
         .video-container {
             background-color: #2F3135; /* Color de fondo del contenedor */
-            padding: 20px; /* Espacio alrededor del video */
+            padding: 30px; /* Espacio alrededor del video */
             text-align: center; /* Centrar el video horizontalmente */
-            margin: 20px auto; /* Espacio superior e inferior automático y centrado */
-            max-width: 100%; /* Ancho máximo del contenedor */
+            margin: 20px auto; /* Margen superior e inferior automático y centrado */
+            max-width: 80%; /* Ancho máximo del contenedor */
+            border-radius: 10px; /* Bordes redondeados para un mejor estilo */
         }
         video {
-            max-width: 100%; /* Video responsive */
+            width: 100%; /* Ancho máximo del video dentro del contenedor */
             height: auto; /* Altura automática para mantener la relación de aspecto */
         }
         /* Estilos para las imágenes en la parte inferior */
@@ -88,6 +89,11 @@
             }
             .footer-images-container {
                 width: 90%; /* Ancho del contenedor ajustado para pantallas más pequeñas */
+            }
+            .video-container {
+                max-width: 90%; /* Ajuste de ancho máximo para pantallas más pequeñas */
+                margin-left: 5%; /* Margen izquierdo para pantallas más pequeñas */
+                margin-right: 5%; /* Margen derecho para pantallas más pequeñas */
             }
         }
     </style>
