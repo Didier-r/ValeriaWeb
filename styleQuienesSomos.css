@@ -1,0 +1,147 @@
+/* Estilos específicos para la página "Quiénes Somos" */
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #0145C0;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px; /* Espacio para las imágenes de la parte inferior */
+}
+
+.header-banner {
+    background-color: #2F3135;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; /* Ajusta el espacio dentro del banner */
+}
+
+.main-content {
+    width: 100%;
+    padding: 20px 0; /* Ajusta el espacio dentro de la sección principal */
+    flex-grow: 1;
+}
+
+.circle-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para el título principal */
+.title {
+    text-align: center;
+    font-size: 10vw; /* Tamaño de fuente responsivo */
+    font-family: "Monotype Corsiva", cursive;
+    color: white;
+    margin-top: 0px; /* Espacio sobre el título */
+}
+
+/* Estilos para el subtítulo */
+.subtitle {
+    text-align: center;
+    font-size: 2vw; /* Tamaño de fuente responsivo */
+    color: white;
+    margin-top: 0px; /* Espacio sobre el subtítulo */
+}
+
+/* Estilos para el texto adicional */
+.additional-text {
+    text-align: center;
+    font-size: 3vw; /* Tamaño de fuente responsivo */
+    color: white;
+    margin-top: 10px; /* Espacio sobre el texto adicional */
+}
+
+/* Estilos para la primera sección de información de la empresa */
+.company-info {
+    background-color: white;
+    color: #0145C0;
+    text-align: center;
+    margin: 20px auto; /* Ajusta el margen superior e inferior */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 80%; /* Ancho máximo para el contenido */
+}
+
+/* Estilos para la segunda sección de información de la empresa */
+.company-info-new {
+    background-color: white;
+    color: #0145C0;
+    text-align: center;
+    margin: 20px auto; /* Ajusta el margen superior e inferior */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 80%; /* Ancho máximo para el contenido */
+}
+
+/* Estilos responsivos para las secciones de información */
+@media (max-width: 768px) {
+    .company-info, .company-info-new {
+        max-width: 90%; /* Ajusta el ancho máximo para pantallas más pequeñas */
+    }
+
+    .over-cards-title {
+        font-size: 5vw; /* Reducir tamaño de fuente para pantallas pequeñas */
+        margin-top: 20px; /* Ajuste de margen superior */
+    }
+}
+
+/* Estilos para los títulos de las secciones de información */
+.company-info h2, .company-info-new h2 {
+    font-size: 3vw; /* Tamaño de fuente responsivo */
+    color: #0145C0;
+    margin-bottom: 10px; /* Espacio bajo el título */
+}
+
+/* Estilos para los párrafos de las secciones de información */
+.company-info p, .company-info-new p {
+    font-size: 1.5vw; /* Tamaño de fuente responsivo */
+    color: #0145C0;
+}
+
+/* Estilos para el título sobre las tarjetas */
+.over-cards-title {
+    text-align: center;
+    font-size: 3vw; /* Tamaño de fuente responsivo */
+    font-weight: bold;
+    color: white;
+    margin: 20px auto; /* Ajusta el margen superior e inferior */
+}
+/* Estilos específicos para la página "Quiénes Somos" */
+
+/* Estilos para las imágenes en el footer */
+.footer-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente los íconos */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0145C0;
+    padding: 10px 0;
+}
+
+.footer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px;
+}
