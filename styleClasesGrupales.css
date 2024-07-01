@@ -60,7 +60,7 @@ body {
 }
 
 video {
-    width: 100%; /* Ajusta el video al 100% del contenedor */
+    width: 30%; /* Ajusta el video al 100% del contenedor */
     height: auto; /* Altura automática para mantener la relación de aspecto */
 }
 

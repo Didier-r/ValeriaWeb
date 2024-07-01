@@ -1,7 +1,7 @@
 /* Estilos para el cuerpo del documento */
 body {
     background-color: #0046BF; /* Color de fondo azul */
-    background-image: url('imagenes/wallhaven-kx2d7d.jpg'); /* Imagen de fondo */
+    background-image: url('imagenes/necesaria.jpg'); /* Imagen de fondo */
     background-size: 100% 40vh; /* Ajusta la imagen para cubrir el 40% del viewport en altura */
     background-position: center top; /* Centra la imagen en la parte superior */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
