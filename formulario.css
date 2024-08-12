@@ -1,0 +1,125 @@
+/* Estilos específicos para la página "Quiénes Somos" */
+
+/* Estilos generales del cuerpo del documento */
+body {
+    margin: 0; /* Elimina el margen predeterminado */
+    height: 100%; /* Ocupa el 100% de la altura disponible */
+    background-color: #0145C0; /* Color de fondo */
+    color: white; /* Color de texto */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    display: flex; /* Usa el modelo de caja flexible */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    padding-bottom: 80px; /* Espacio para las imágenes del footer */
+}
+
+/* Estilos del banner superior */
+.header-banner {
+    background-color: #2F3135; /* Color de fondo */
+    width: 100%; /* Ancho completo */
+    text-align: center; /* Alineación del texto */
+    padding: 20px 0; /* Espaciado interno */
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    width: 100%; /* Ancho completo */
+    padding: 20px 0; /* Espaciado interno */
+    flex-grow: 1; /* Ocupa todo el espacio restante */
+}
+
+/* Estilos para la imagen circular */
+.circle-img {
+    position: absolute; /* Posición absoluta */
+    top: 20px; /* Desde arriba */
+    left: 20px; /* Desde la izquierda */
+    width: 100px; /* Ancho */
+    height: 100px; /* Alto */
+    border-radius: 50%; /* Borde redondeado */
+    overflow: hidden; /* Oculta el contenido que sobresale */
+    border: 2px solid #fff; /* Borde blanco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Estilos para la imagen dentro del círculo */
+.circle-img img {
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+/* Estilos para el título principal */
+.title {
+    text-align: center; /* Alineación del texto */
+    font-size: 10vw; /* Tamaño de fuente responsivo */
+    font-family: "Monotype Corsiva", cursive; /* Fuente específica */
+    color: white; /* Color de texto */
+    margin-top: 0px; /* Espacio sobre el título */
+}
+
+/* Estilos para el subtítulo */
+.subtitle {
+    text-align: center; /* Alineación del texto */
+    font-size: 2vw; /* Tamaño de fuente responsivo */
+    color: white; /* Color de texto */
+    margin-top: 0px; /* Espacio sobre el subtítulo */
+}
+
+/* Estilo del formulario */
+form {
+    width: 60%;
+    max-width: 100%; /* Ancho máximo del formulario */
+    margin: auto; /* Centra el formulario horizontalmente */
+    border: 1px solid #2F3135; /* Borde del formulario */
+    padding: 20px; /* Espacio interno alrededor del contenido del formulario */
+    border-radius: 5px; /* Bordes redondeados del formulario */
+    background-color: #2F3135; /* Color de fondo del formulario */
+    margin-top: 40px; /* Ajusta este valor para aumentar el espacio superior */
+}
+
+/* Estilo para los grupos de campos del formulario */
+.form-group {
+    margin-bottom: 15px; /* Espacio inferior entre grupos de campos */
+}
+
+/* Estilo de las etiquetas dentro de los grupos de campos */
+.form-group label {
+    display: block; /* Hace que las etiquetas ocupen todo el ancho disponible */
+    margin-bottom: 5px; /* Espacio inferior entre la etiqueta y el campo */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+/* Estilo para los campos de entrada, áreas de texto y selecciones */
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%; /* Ancho completo del campo dentro del contenedor */
+    padding: 8px; /* Espacio interno dentro del campo */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del campo */
+    border: 1px solid #2F3135; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados del campo */
+    background-color: #2F3135; /* Color de fondo del campo */
+    color: white; /* Color del texto del campo */
+}
+
+/* Estilo específico para el área de texto (textarea) */
+.form-group textarea {
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+}
+
+/* Estilo del botón de envío */
+button {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: #2F3135; /* Color del texto del botón */
+    border: none; /* Sin borde en el botón */
+    padding: 10px 15px; /* Espacio interno dentro del botón */
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none; /* Sin subrayado en el texto del botón */
+    display: inline-block; /* Permite que el botón se comporte como un bloque en línea */
+    font-size: 16px; /* Tamaño de la fuente del texto del botón */
+    margin-top: 10px; /* Espacio superior del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 4px; /* Bordes redondeados del botón */
+}
+
+/* Estilo del botón cuando se pasa el cursor sobre él */
+button:hover {
+    background-color: #45a049; /* Color de fondo del botón cuando se pasa el cursor */
+}

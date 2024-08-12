@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+     <!-- Configuración básica del documento -->
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <!-- Enlaces a recursos externos -->
+     <!-- Bootstrap CSS -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Enlace a tu archivo CSS general -->
+     <link rel="stylesheet" href="styles.css">
+     <!-- Enlace a tu nuevo archivo CSS para esta página -->
+     
+
+     <link rel="stylesheet" href="formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+     <!-- Banner superior -->
+     <div class="header-banner">
+        <!-- Imagen del círculo superior -->
+        <div class="circle-img">
+            <img src="imagenes/logoEmpresa.jpg" alt="Imagen del usuario">
+        </div>
+        <!-- Título principal -->
+        <h1 class="title">Forfisic Gym</h1>
+        <!-- Subtítulo -->
+        <h2 class="subtitle">EL MEJOR GIMNASIO</h2>
+        <!-- Texto adicional -->
+        <h3 class="additional-text">¡Trabajamos por tu salud!</h3>
+
+    </div>
+
+
+    
+    <form>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div class="form-group">
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <div class="form-group">
+            <label for="dni">Número de DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+        </div>
+        <div class="form-group">
+            <label for="lesiones">¿Tienes alguna lesión o discapacidad?</label>
+            <textarea id="lesiones" name="lesiones" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="plan">¿Qué plan quieres?</label>
+            <select id="plan" name="plan" required>
+                <option value="plan1">Plan individual</option>
+                <option value="plan2">Plan amigos</option>
+            </select>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+
+
+
+    <!-- Scripts de JavaScript para Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
