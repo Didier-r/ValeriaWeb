@@ -35,40 +35,16 @@
 
 
     
-    <form>
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-        </div>
-        <div class="form-group">
-            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
-        </div>
-        <div class="form-group">
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-        </div>
-        <div class="form-group">
-            <label for="dni">Número de DNI:</label>
-            <input type="text" id="dni" name="dni" required>
-        </div>
-        <div class="form-group">
-            <label for="lesiones">¿Tienes alguna lesión o discapacidad?</label>
-            <textarea id="lesiones" name="lesiones" rows="4"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="plan">¿Qué plan quieres?</label>
-            <select id="plan" name="plan" required>
-                <option value="plan1">Plan individual</option>
-                <option value="plan2">Plan amigos</option>
-            </select>
-        </div>
-        <button type="submit">Enviar</button>
+    <form action="">
+        {{form.as_p}}
+        <button>
+            Save
+        </button>
+
     </form>
+
+    
+   
 
 
 
