@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,9 @@
     <!-- Incluye el CSS de Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Incluye tu propio archivo CSS -->
-    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="{% static '/css/styleIndex.css' %}">
 
+    
     <title>Forfisic Gym</title>
 </head>
 <body>
