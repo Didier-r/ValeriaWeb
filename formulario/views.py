@@ -19,7 +19,7 @@ def crear_usuario(request):
     })
     else:
         Project.objects.create(nombre=request.POST['nombre'],apellido=request.POST['apellido'],fecha_nacimiento=request.POST['fecha_nacimiento'],correo=request.POST['correo'],sedula=request.POST['sedula'],description=request.POST['description'],plan=request.POST['plan'])
-        return redirect('hello/')
+        return redirect('index')
     
 def planes_Entrenamiento(request):
     return render(request,'planesEntrenamiento.html')
