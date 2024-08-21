@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,8 +12,8 @@
     <!-- Enlace a tu archivo CSS general -->
     <link rel="stylesheet" href="styles.css">
     <!-- Enlace a tu nuevo archivo CSS para esta página -->
-    <link rel="stylesheet" href="styleQuienesSomos.css">
-    
+    <link rel="stylesheet" href={% static '/css/styleQuienesSomos.css' %}>
+    <!--styleQuienesSomos.css-->
     <!-- Título de la página -->
     <title>Quiénes Somos</title>
 </head>
@@ -21,7 +22,7 @@
     <div class="header-banner">
         <!-- Imagen del círculo superior -->
         <div class="circle-img">
-            <img src="imagenes/logoEmpresa.jpg" alt="Imagen del usuario">
+            <img src={% static 'imagenes/logoEmpresa.jpg' %} alt="Imagen del usuario">
         </div>
         <!-- Título principal -->
         <h1 class="title">Forfisic Gym</h1>
@@ -55,16 +56,16 @@
     <div class="footer-images-container">
         <!-- Enlaces a redes sociales -->
         <a href="https://www.instagram.com/forfisicgym/" target="_blank">
-            <img src="imagenes/instagramActual.jpg" alt="Instagram Logo" class="footer-image">
+            <img src={% static 'imagenes/instagramActual.jpg'%} alt="Instagram Logo" class="footer-image">
         </a>
         <a href="mailto:example@example.com">
-            <img src="imagenes/gamilActual.jpg" alt="Email Logo" class="footer-image">
+            <img src={% static 'imagenes/gamilActual.jpg'%} alt="Email Logo" class="footer-image">
         </a>
         <a href="https://wa.me/573137694239" target="_blank">
-            <img src="imagenes/whattssappActual.jpg" alt="WhatsApp Logo" class="footer-image">
+            <img src={% static 'imagenes/whattssappActual.jpg'%} alt="WhatsApp Logo" class="footer-image">
         </a>
         <a href="https://www.google.com/maps/place/FORFISIC+GYM/@4.530081,-75.6398094,16.25z/data=!4m6!3m5!1s0x8e38f4660ff646f7:0xa30367cc99138d15!8m2!3d4.5310827!4d-75.6385808!16s%2Fg%2F11c6_wy6vn?entry=ttu" target="_blank">
-            <img src="imagenes/UbicacionActual.jpg" alt="Ubicacion Logo" class="footer-image">
+            <img src={% static 'imagenes/UbicacionActual.jpg' %} alt="Ubicacion Logo" class="footer-image">
         </a>
     </div>
 

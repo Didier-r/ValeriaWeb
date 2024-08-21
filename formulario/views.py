@@ -9,9 +9,8 @@ from .forms import CrearNewUsuario
 def index(request):
     return render(request,'index.html')
 
-def Projects(request):
-    projects = list(Project.objects.values())
-    return JsonResponse(projects,safe=False)
+def Quienes_Somos(request):
+    return render(request,'quienesSomos.html')
 
 def crear_usuario(request):
     if request.method == 'GET':
@@ -21,5 +20,12 @@ def crear_usuario(request):
     else:
         Project.objects.create(nombre=request.POST['nombre'],apellido=request.POST['apellido'],fecha_nacimiento=request.POST['fecha_nacimiento'],correo=request.POST['correo'],sedula=request.POST['sedula'],description=request.POST['description'],plan=request.POST['plan'])
         return redirect('hello/')
-        
+    
+def planes_Entrenamiento(request):
+    return render(request,'planesEntrenamiento.html')
+
+def clases_grupales(request):
+    return render(request,'ClasesGrupales.html')
+    
+    
     

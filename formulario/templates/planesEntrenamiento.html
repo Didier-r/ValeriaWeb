@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Enlace a tu archivo CSS específico para esta página -->
-    <link rel="stylesheet" href="stylePlanes.css">
+    <link rel="stylesheet" href={% static '/css/stylePlanes.css'%}>
     
     <!-- Título de la página -->
     <title>Planes de entrenamiento</title>
@@ -19,7 +20,7 @@
     <div class="header">
         <!-- Imagen circular -->
         <div class="circle-img">
-            <img src="imagenes/logoEmpresa.jpg" alt="Imagen del usuario">
+            <img src={% static 'imagenes/logoEmpresa.jpg' %} alt="Imagen del usuario">
         </div>
         <!-- Título principal -->
         <h1 class="title">Forfisic Gym</h1>
@@ -36,14 +37,14 @@
 
         <!-- Primera sección de información del plan individual -->
         <div class="company-info">
-            <h2><a href="formulario.html" class="mi-enlace">Plan Individual</a></h2>
+            <h2><a href={% url 'formulario' %} class="mi-enlace">Plan Individual</a></h2>
             <p>57.000</p> <!-- Precio -->
             <p>Mensual</p> <!-- Duración -->
         </div>
 
         <!-- Segunda sección de información del plan amigos -->
         <div class="company-info-new">
-            <h2><a href="formulario.html" class="mi-enlace">Plan amigos</a></h2>
+            <h2><a href={% url 'formulario' %} class="mi-enlace">Plan amigos</a></h2>
             <p>50.000</p> <!-- Precio -->
             <p>A partir de 3 usuarios nuevos</p> <!-- Condiciones -->
         </div>
@@ -59,16 +60,16 @@
     <div class="footer-images-container">
         <!-- Enlaces a redes sociales y contacto -->
         <a href="https://www.instagram.com/forfisicgym/" target="_blank">
-            <img src="imagenes/instagramActual.jpg" alt="Instagram Logo" class="footer-image">
+            <img src={% static 'imagenes/instagramActual.jpg'%} alt="Instagram Logo" class="footer-image">
         </a>
         <a href="mailto:example@example.com">
-            <img src="imagenes/gamilActual.jpg" alt="Email Logo" class="footer-image">
+            <img src={% static 'imagenes/gamilActual.jpg'%} alt="Email Logo" class="footer-image">
         </a>
         <a href="https://wa.me/573137694239" target="_blank">
-            <img src="imagenes/whattssappActual.jpg" alt="WhatsApp Logo" class="footer-image">
+            <img src={% static 'imagenes/whattssappActual.jpg'%} alt="WhatsApp Logo" class="footer-image">
         </a>
         <a href="https://www.google.com/maps/place/FORFISIC+GYM/@4.530081,-75.6398094,16.25z/data=!4m6!3m5!1s0x8e38f4660ff646f7:0xa30367cc99138d15!8m2!3d4.5310827!4d-75.6385808!16s%2Fg%2F11c6_wy6vn?entry=ttu" target="_blank">
-            <img src="imagenes/UbicacionActual.jpg" alt="Ubicacion Logo" class="footer-image">
+            <img src={% static 'imagenes/UbicacionActual.jpg' %} alt="Ubicacion Logo" class="footer-image">
         </a>
     </div>
 
