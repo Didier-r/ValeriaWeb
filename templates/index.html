@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluye el CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluye tu propio archivo CSS -->
+    <link rel="stylesheet" href="{% static '/css/styleIndex.css' %}">
+
+    
+    <title>Forfisic Gym</title>
+</head>
+<body>
+    <!-- Contenedor principal para centrar contenido -->
+    <div class="content">
+        <!-- Esfera con la imagen de la compañía -->
+        <div class="sphere">
+            <img src="{% static 'imagenes/logoEmpresa.jpg' %}" alt="Imagen de la compañía"> <!-- Imagen dentro de la esfera -->
+        </div>
+        <!-- Texto debajo de la esfera -->
+        <div class="text-below">
+            Forfisic Gym
+        </div>
+        <!-- Nuevo texto debajo del texto existente -->
+        <div class="additional-text">
+            EL MEJOR GYM
+        </div>
+        <!-- Texto adicional -->
+        <div class="extra-text">
+            ¡Trabajamos por tu salud!
+        </div>
+        
+        <!-- Primer botón para dirigir a la página Quiénes Somos -->
+        <div class="button-container">
+            <a href={% url 'quienesSomos' %} class="button">
+                QUIENES SOMOS
+            </a>
+        </div>
+
+        <!-- Segundo botón para dirigir a la página Planes de Entrenamiento -->
+        <div class="button-container2">
+            <a href={% url 'planesEntrenamiento' %} class="button2">
+                PLANES DE ENTRENAMIENTO
+            </a>
+        </div>
+
+        <!-- Tercer botón para dirigir a la página Clases Grupales -->
+        <div class="button-container3">
+            <a href={% url 'clases_grupales' %} class="button3">
+                CLASES GRUPALES
+            </a>
+        </div>
+    </div>
+
+    <!-- Contenedor flexible para las imágenes en la parte inferior -->
+    <div class="footer-images-container">
+        <!-- Enlace a Instagram -->
+        <a href="https://www.instagram.com/forfisicgym/" target="_blank">
+            <img src={% static 'imagenes/instagramActual.jpg'%} alt="Instagram Logo" class="footer-image">
+        </a>
+        <!-- Enlace por correo electrónico -->
+        <a href="mailto:example@example.com">
+            <img src={% static 'imagenes/gamilActual.jpg'%} alt="Email Logo" class="footer-image-email">
+        </a>
+        <!-- Enlace a WhatsApp -->
+        <a href="https://wa.me/573137694239" target="_blank">
+            <img src={% static 'imagenes/whattssappActual.jpg'%} alt="WhatsApp Logo" class="footer-image-whatsapp">
+        </a>
+        <!-- Enlace a Google Maps -->
+        <a href="https://www.google.com/maps/place/FORFISIC+GYM/@4.530081,-75.6398094,16.25z/data=!4m6!3m5!1s0x8e38f4660ff646f7:0xa30367cc99138d15!8m2!3d4.5310827!4d-75.6385808!16s%2Fg%2F11c6_wy6vn?entry=ttu" target="_blank">
+            <img src={% static 'imagenes/UbicacionActual.jpg' %} alt="Ubicacion Logo" class="footer-image-location">
+        </a>
+    </div>
+</body>
+</html>
