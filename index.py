@@ -12,11 +12,15 @@ def quienes_somos():
 
 @app.route('/planes-entrenamiento')
 def planes_entrenamiento():
-    return render_template('planes_entrenamiento.html')
+    return render_template('planesEntrenamiento.html')
 
 @app.route('/clases-grupales')
 def clases_grupales():
-    return render_template('clases_grupales.html')
+    return render_template('ClasesGrupales.html')
+
+@app.route('/formulario')
+def formulario():
+    return render_template('formulario.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

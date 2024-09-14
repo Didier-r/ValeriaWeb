@@ -1,29 +1,23 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-     <!-- Configuración básica del documento -->
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
-     <!-- Enlaces a recursos externos -->
-     <!-- Bootstrap CSS -->
-     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-     <!-- Enlace a tu archivo CSS general -->
-     <link rel="stylesheet" href="{% static '/css/formulario.css' %}">
-     <!-- Enlace a tu nuevo archivo CSS para esta página -->
-     
-
-     <link rel="stylesheet" href="formulario.css">
+    <!-- Enlaces a recursos externos -->
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a tu archivo CSS general -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/formulario.css') }}">
     <title>Formulario</title>
 </head>
 <body>
-     <!-- Banner superior -->
-     <div class="header-banner">
+    <!-- Banner superior -->
+    <div class="header-banner">
         <!-- Imagen del círculo superior -->
         <div class="circle-img">
-            <img src="{% static 'imagenes/logoEmpresa.jpg' %}" alt="Imagen del usuario">
+            <img src="{{ url_for('static', filename='imagenes/logoEmpresa.jpg') }}" alt="Imagen del usuario">
         </div>
         <!-- Título principal -->
         <h1 class="title">Forfisic Gym</h1>
@@ -31,26 +25,17 @@
         <h2 class="subtitle">EL MEJOR GIMNASIO</h2>
         <!-- Texto adicional -->
         <h3 class="additional-text">¡Trabajamos por tu salud!</h3>
-
     </div>
 
-
-    
-    <form method="POST">
-        {% csrf_token %}
-        {{form.as_p}}
-        <button>
-            Save
-        </button>
-
+    <!-- Formulario -->
+    <form method="POST" action="{{ url_for('formulario') }}">
+        <!-- Aquí puedes añadir los campos del formulario -->
+        <div class="form-group">
+            <label for="exampleInput">Campo de ejemplo</label>
+            <input type="text" class="form-control" id="exampleInput" name="exampleInput" placeholder="Ingrese un valor">
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
     </form>
-
-    
-   
-
-
-
-
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
