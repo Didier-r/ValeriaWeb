@@ -1,50 +1,46 @@
-Guía Detallada de HTML y CSS para Principiantes
+Codigo que se usaran para la ejecucion 
 
-Introducción
-Esta guía proporciona una introducción exhaustiva al uso de HTML y CSS para el diseño y desarrollo de sitios web. A lo largo del documento, utilizaremos ejemplos prácticos del proyecto ficticio "Forfisic Gym" para ilustrar conceptos clave y buenas prácticas.
+Primero lo que hariamos seria instalar el entorno virtual  de la siguente manera 
 
-Conceptos Básicos de HTML
+pip install virtualenv
 
-Estructura Básica de un Documento HTML
+y luego creariamos el entorno virtual
 
-El documento HTML comienza con <!DOCTYPE html> seguido de <html>, <head>, y <body>.
-<head> contiene metadatos como charset, viewport, y enlaces a hojas de estilo CSS mediante <link>.
-Elementos y Etiquetas HTML
+virtualenv venv
 
-Las etiquetas HTML como <div>, <h1>-<h6>, <p>, <img>, <video>, entre otras, estructuran y muestran contenido en la página.
-Los atributos como src, alt, y href proporcionan información adicional y enlaces dentro del documento.
-Organización de Contenido
+luego seguimos con iniciar el entorno virtual
 
-Dividir el contenido en secciones lógicas utilizando <header>, <main>, <footer>, y <section> para mejorar la accesibilidad y el SEO.
-Conceptos Básicos de CSS
+.\venv\Scripts\activate
 
-Estilización de HTML con CSS
+y luego seguimos con la instalacion de flask
 
-CSS se aplica para cambiar el diseño y la presentación del contenido HTML.
-Selecciona elementos utilizando selectores como element, .clase, y #id, y aplica propiedades de estilo como color, font-size, margin, y padding.
-Estilos en Cascada y Prioridad
+pip install flask
 
-La cascada de estilos define cómo se aplican y sobrescriben las reglas CSS basadas en la especificidad y la orden de declaración.
-Utiliza !important con precaución para anular reglas, priorizando mejores prácticas de especificidad y mantenibilidad.
-Responsive Web Design (Diseño Web Responsivo)
+y ahi seguimos con la instalacion de flask-wtf
 
-Implementa Media Queries para adaptar el diseño y la disposición del contenido a diferentes tamaños de pantalla.
-Utiliza unidades de medida relativas (em, rem, %) para hacer que el diseño sea más flexible y adaptable.
-Buenas Prácticas y Comentarios
+pip install Flask-wtf
 
-Organización y Comentarios en el Código
+y de ahi luego seguimos con la instalcion de  WTForms 
 
-Divide el código en secciones claras y utiliza nombres de clases y IDs descriptivos.
-Incluye comentarios explicativos para cada sección de código, detallando su función y propósito específico.
-Optimización de Código
+pip install WTForms 
 
-Minimiza el uso de código redundante y optimiza imágenes y recursos para mejorar el rendimiento de carga de la página.
-Aplicación Práctica en "Forfisic Gym"
+y de ahi continuamos con la instalacion de Flask-MySQLdb
 
-Página "Clases Grupales"
-Define la estructura básica del HTML para la página.
-Aplica estilos CSS utilizando hojas de estilo externas para mejorar la legibilidad y mantenibilidad del código.
-Implementa Media Queries para asegurar que la página sea accesible y funcione correctamente en diferentes dispositivos y tamaños de pantalla.
-Conclusión
+pip install Flask-MySQLdb
 
-Esta guía proporciona una base sólida para comenzar a trabajar con HTML y CSS, cubriendo desde los conceptos básicos hasta prácticas avanzadas como el diseño responsivo y la optimización del código. Con este conocimiento, podrás crear y mantener sitios web efectivos y visualmente atractivos.
+y lo siguente para instalar es esto email_validator
+
+pip install email_validator
+
+
+Creacion de la tabla para la base de datos 
+CREATE TABLE registros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    apellido VARCHAR(255) NOT NULL,
+    fecha_nacimiento DATE NOT NULL,
+    correo VARCHAR(255) NOT NULL,
+    cedula VARCHAR(50) NOT NULL,
+    descripcion TEXT,
+    plan ENUM('amigos', 'individual') NOT NULL
+);
