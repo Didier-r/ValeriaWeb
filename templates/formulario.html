@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Banner superior -->
-    <div class="header-banner">
+    <div class="header-banner text-center">
         <!-- Imagen del círculo superior -->
         <div class="circle-img">
             <img src="{{ url_for('static', filename='imagenes/logoEmpresa.jpg') }}" alt="Imagen del usuario">
@@ -27,15 +27,75 @@
         <h3 class="additional-text">¡Trabajamos por tu salud!</h3>
     </div>
 
-    <!-- Formulario -->
-    <form method="POST" action="{{ url_for('formulario') }}">
-        <!-- Aquí puedes añadir los campos del formulario -->
-        <div class="form-group">
-            <label for="exampleInput">Campo de ejemplo</label>
-            <input type="text" class="form-control" id="exampleInput" name="exampleInput" placeholder="Ingrese un valor">
-        </div>
-        <button type="submit" class="btn btn-primary">Save</button>
-    </form>
+    <!-- Contenedor principal para el formulario -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Formulario de Registro</h2>
+        
+        <!-- Formulario -->
+        <form method="POST" action="{{ url_for('formulario') }}">
+            {{ form.hidden_tag() }} <!-- Campo CSRF necesario -->
+
+            <div class="form-group">
+                {{ form.nombre.label(class="form-label") }}
+                {{ form.nombre(class="form-control") }}
+                {% for error in form.nombre.errors %}
+                    <div class="text-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+            
+            <div class="form-group">
+                {{ form.apellido.label(class="form-label") }}
+                {{ form.apellido(class="form-control") }}
+                {% for error in form.apellido.errors %}
+                    <div class="text-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+            
+            <div class="form-group">
+                {{ form.fechaNacimiento.label(class="form-label") }}
+                {{ form.fechaNacimiento(class="form-control") }}
+                {% for error in form.fechaNacimiento.errors %}
+                    <div class="text-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+            
+            <div class="form-group">
+                {{ form.correo.label(class="form-label") }}
+                {{ form.correo(class="form-control") }}
+                {% for error in form.correo.errors %}
+                    <div class="text-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+            
+            <div class="form-group">
+                {{ form.cedula.label(class="form-label") }}
+                {{ form.cedula(class="form-control") }}
+                {% for error in form.cedula.errors %}
+                    <div class="text-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+            
+            <div class="form-group">
+                {{ form.descripcion.label(class="form-label") }}
+                {{ form.descripcion(class="form-control", rows=4) }}
+                {% for error in form.descripcion.errors %}
+                    <div class="text-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+            
+            <div class="form-group">
+                {{ form.plan.label(class="form-label") }}
+                {{ form.plan(class="form-control") }}
+                {% for error in form.plan.errors %}
+                    <div class="text-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+            
+            <div class="form-group text-center">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+    </div>
 
     <!-- Scripts de JavaScript para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
