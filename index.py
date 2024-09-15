@@ -69,7 +69,7 @@ def formulario():
 
 @app.route('/success')
 def success():
-    return 'Datos enviados y almacenados correctamente en la base de datos'
+    return redirect(url_for('home'))
 
 if __name__ == '__main__':
     app.run(debug=True)
